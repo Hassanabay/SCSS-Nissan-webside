@@ -1,0 +1,48 @@
+.baslik{
+    font-family: $font-second;
+    white-space: nowrap;
+    letter-spacing: 3px;
+}
+.hover{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.design{
+    background-size: cover;
+    height: 50vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+
+p{
+    font-size: 24px;
+    max-width: 500px;
+    text-align: center;
+}
+h1{
+    @extend .baslik;
+    font-size: 30px;
+
+}
+button{
+    padding: 20px 50px;
+    background: transparent;
+    border: 2px solid white;
+    font-weight: 700;
+    letter-spacing: 5px;
+    transition: background-color 0.5, color 0.5;
+    &:hover{
+        @extend .hover;
+        color: black;
+        background-color: white;
+    }
+
+
+}
+    
+}
+

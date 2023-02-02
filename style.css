@@ -169,12 +169,17 @@ button:hover {
   align-items: center;
 }
 #images-main {
+  transition: all 0.5s;
   max-width: 900px;
 }
 @media (max-width: 1000px) {
   #images-main {
     max-width: 500px;
   }
+}
+#images-main:hover {
+  transform: translate(-100px, 50px);
+  transition: all 0.5s;
 }
 #images-second {
   max-width: 400px;

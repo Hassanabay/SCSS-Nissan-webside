@@ -147,10 +147,16 @@ button{
     flex-direction: column;
     gap: 50px;
     align-items: center;
+    
     &-main{
+        transition: all 0.5s;
         max-width: 900px;
         @include mobile{
             max-width: 500px;
+        }
+        &:hover{
+            transform: translate(-100px,50px);
+            transition: all 0.5s;
         }
     }
     &-second{
